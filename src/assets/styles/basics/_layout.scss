@@ -1,0 +1,16 @@
+.main-container{
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    
+    @include for-narrow-layout {
+        max-width: calc(100% - 80px);
+    }
+    @include for-normal-layout {
+       
+    }
+    @include for-wide-layout {
+       max-width: 1110px;
+    }
+}
+
+
